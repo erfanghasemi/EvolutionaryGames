@@ -44,6 +44,8 @@ class Evolution():
         # num_players example: 100
         # players: an array of `Player` objects
 
+        players.sort(key=lambda x: x.fitness, reverse=True)
+
         # TODO (additional): a selection method other than `top-k`
         # TODO (additional): plotting
 
