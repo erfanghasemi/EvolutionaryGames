@@ -10,7 +10,7 @@ class NeuralNetwork():
         self.W1 = np.random.normal(size=(layer_sizes[1], layer_sizes[0])) 
         self.b1 = np.random.normal(size=(layer_sizes[1], 1)) 
 
-        self.W2 = np.random.normal(size=(layer_sizes[1], layer_sizes[2]))         
+        self.W2 = np.random.normal(size=(layer_sizes[2], layer_sizes[1]))         
         self.b2 = np.random.normal(size=(layer_sizes[2], 1)) 
 
     def activation(self, x, function):
